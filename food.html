@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+      body{background-color: #F0F8FF;}
     header{width: 100%; height: 100px; text-align: center;}
       footer{width: 100%; height: 70px; text-align: center; font-size: 20px; padding: 6px;}
        nav ul li{list-style-type: none; display: inline-block; font-size: 25px; font-weight: bold;}
-      nav ul li a{text-decoration: none; color: #556B2F; font-size: 25px; margin: 10px;}
-     .foods{text-align: center; text-shadow: 9px 5px #F0E68C; font-size: 30px;}
-      .foods2{}
+      nav ul li a{text-decoration: none; color: #F0E68C; font-size: 25px; margin: 10px;}
+     .foods{text-align: center; text-shadow: 9px 5px #556B2F; font-size: 30px;}
+      .foods2{text-align: center;}
+      .foods2 img{height: 200px; width: 250px; transition: width height tranform 2s linear;}
+      .foods2 img:hover{width: 350px; height: 300px; transform: rotate(15deg);}
+      .foods2 h3{font-size: 25px; background-color: #F0E68C}
+      .cuisine{font-size: 22px;}
     </style>
   </head>
   <body>
@@ -27,11 +32,14 @@
 </header>
     <main>
       <h1 class="foods">Famous Foods</h1>
+      <p class="cuisine">Madagascar's cuisine is a flavorful fusion, shaped by diverse influences and characterized by its staple, rice, served with a variety of accompaniments called "laoka". The cuisine is known for its fresh, locally sourced ingredients, with zebu (a type of cattle), pork, chicken, fish, and seafood providing diverse protein options.</p>
    <div class="foods2">
      <img src="ravitoto.jpg">
      <h3>Ravitoto</h3>
      <img src="akoho.jpg">
      <h3>Akoho sy Voanio</h3>
+     <img src="mofo gasy.jpg">
+     <h3>Mofo Gasy</h3>
    </div>
     </main>
     <footer>
