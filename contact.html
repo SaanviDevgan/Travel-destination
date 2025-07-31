@@ -25,12 +25,32 @@
   </nav>
 </header>
     <main>
-      <section>
-        
-      </section>
-      <section>
-        
-      </section>
+     <div class="wrapper">
+       <h2>Contact Us</h2>
+       <form class="form2" onsubmit="return validate();">
+         <div class="inputfield">
+           <input type="text" placeholder="Name" id="name">
+         </div>
+
+          <div class="inputfield">
+           <input type="text" placeholder="Phone" id="name">
+         </div>
+
+          <div class="inputfield">
+           <input type="text" placeholder="Email" id="name">
+         </div>
+
+          <div class="inputfield">
+           <textarea placeholder="Message" id="message"></textarea>
+         </div>
+
+         <div class="btn">
+           <input type="submit">
+         </div>
+
+         <div id="error"></div>
+       </form>
+     </div>
     </main>
     <footer>
       <a href="">To know more about _____</a>
