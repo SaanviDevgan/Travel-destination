@@ -11,14 +11,31 @@
       nav ul li{list-style-type: none; display: inline-block; font-weight: bold; font-size: 25px;}
       nav ul li a{text-decoration: none; color: #008000; font-size: 20px; margin: 10px;}
       .divClass{text-align: center; padding: 45px; width: 1250px; height: 700px;}
-      .faq{padding: 34px;}
+      .faq{padding: 34px; border: 3px solid #556B2F;}
       .faq ul li{list-style-type: none;}
-      .question{position: relative; margin: 10px; cursor: pointer; border: 3px solid #556B2F;}
+      .question{position: relative; margin: 10px; cursor: pointer;}
       .answer{display: none; padding: 5px; font-size: 18px;}
-      .question span{position: absolute; display: inline-block; top: 10px; right: 250px;}
+      .question span{position: absolute; display: inline-block; top: 12px; right: 250px;}
     </style>
-    <script>
-      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+<script type="text/javascript">
+  
+$(document).ready(function(){
+$('.question').click(function(){
+  var $answer= $(this).find('.answer');
+  if ($answer.hasClass('open')){
+   $answer.removeClass('open')
+    $answer.slideUp();
+    $(this).find('span').text('+');
+  } 
+  else{
+    $answer.addClass('open')
+    $answer.slideDown();
+     $(this).find('span').text('-');
+  }
+});
+});
     </script>
   </head>
   <body>
